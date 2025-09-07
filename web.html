@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wanderlust Adventures - Travel Blog (Dark Theme)</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">Wanderlust Adventures</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tips">Travel Tips</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!----------- Hero section ------------>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore the World with Us</h1>
+      <p>Discover breathtaking destinations, travel tips, and stories from around the globe.</p>
+      <button class="btn" onclick="scrollToSection('destinations')">Explore Destinations</button>
+    </div>
+  </section>
+
+  <!------------ Destination Section ------------->
+  <section class="destinations container" id="destinations">
+    <h2 class="section-title">Featured Destinations</h2>
+    <div class="destination-grid">
+      <div class="destination-card" data-title="Santorini, Greece" data-image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" data-description="Santorini is famous for its stunning sunsets, whitewashed buildings, and crystal-clear waters. A perfect romantic getaway.">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Santorini, Greece" />
+        </div>
+        <div class="card-content">
+          <h3>Santorini, Greece</h3>
+          <p>Famous for stunning sunsets and whitewashed buildings.</p>
+          <span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <div class="destination-card" data-title="Kyoto, Japan" data-image="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=800&q=80" data-description="Kyoto offers a glimpse into Japan's rich history with its beautiful temples, traditional tea houses, and cherry blossom trees.">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=400&q=80" alt="Kyoto, Japan" />
+        </div>
+        <div class="card-content">
+          <h3>Kyoto, Japan</h3>
+          <p>Experience traditional temples and cherry blossoms.</p>
+          <span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <div class="destination-card" data-title="Machu Picchu, Peru" data-image="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80" data-description="Machu Picchu is an ancient Incan city set high in the Andes Mountains, known for its archaeological significance and breathtaking views.">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Machu Picchu, Peru" />
+        </div>
+        <div class="card-content">
+          <h3>Machu Picchu, Peru</h3>
+          <p>Explore the ancient Incan city in the Andes.</p>
+          <span class="read-more">Read More</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------Travel Tips section ---------->
+  <section class="travel-tips" id="tips">
+    <div class="container">
+      <h2 class="section-title">Travel Tips</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h3>Pack Light</h3>
+          <p>Bring only essentials to make your travel easier and more comfortable.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Learn Basic Local Phrases</h3>
+          <p>Knowing simple greetings and phrases can enhance your experience and interactions.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Stay Hydrated</h3>
+          <p>Always carry water with you, especially when exploring outdoors or in hot climates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------- Newsletter Section ----------->
+  <section class="newsletter" id="newsletter">
+    <h2 class="section-title">Subscribe to Our Newsletter</h2>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" class="newsletter-input" id="emailInput" placeholder="Enter your email" required />
+      <button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+  </section>
+  <hr>
+
+  <!----------- Contact Section --------->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form" id="contact-form">
+      <input type="text" class="contact-input" placeholder="Your Name" required>
+      <input type="email" class="contact-input" placeholder="Your Email" required>
+      <textarea rows="5"  class="contact-input" placeholder="Your Message" required></textarea>
+      <button type="submit" class="contact-input contact-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!------------ Footer Section ----------->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>About Wanderlust</h2>
+        <p>Your go-to travel blog for inspiration, tips, and stories from around the world.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Contact</h2>
+        <p>Email: contact@wanderlust.com</p>
+        <p>Phone: +92 337 8024691</p>
+      </div>
+      <div class="footer-section">
+        <h2>Follow Us</h2>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-square-facebook fa-1xl"></i></a>
+          <a href="#" aria-label="Twitter" title="Twitter"><i class="fa-brands fa-square-twitter fa-1xl"></i></a>
+          <a href="#" aria-label="Instagram" title="Instagram"> <i class="fa-brands fa-square-instagram fa-1xl"></i><a>
+          <a href="#" arial-label="Linkedin" title="Linkedin"><i class="fa-brands fa-square-linkedin fa-1xl"></i></a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 2rem;">&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <img src="" alt="" class="modal-image" id="modalImage" />
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="web.js"></script>
+
+</body>
+</html>
