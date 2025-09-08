@@ -6,17 +6,6 @@ function scrollToSection(id) {
   }
 }
 
-// Menu Toggle
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menuToggle');
-  const navLinks = document.getElementById('navLinks');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-});
-
-
 // Modal functionality
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');

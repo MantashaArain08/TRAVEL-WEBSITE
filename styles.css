@@ -54,37 +54,7 @@ nav{
 .nav-links a:hover{
     color: #ffcc00;
 }
-.menu-toggle{
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #ffcc00;
-}
 
-/* Mobile view */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;       
-    flex-direction: column;
-    background-color: #857e7e;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    z-index: 1000; 
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
 
 /* Hero Section */
 .hero{
@@ -372,6 +342,11 @@ footer{
     }
     .newsletter-form {
         flex-direction: column;
+        max-width: 350px;
+    }
+    .contact-form {
+        flex-direction: column;
+        max-width: 350px;
     }
 }
 
